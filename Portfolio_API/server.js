@@ -5,8 +5,6 @@ const education = require('./models/educationModel')
 
 //middleware
 app.use(express.json())
-
-//Get Routes
 app.get('/', (req, res) => {
     res.send('Hello Node Api')
 })
@@ -14,9 +12,6 @@ app.get('/', (req, res) => {
 app.get('/info', (req, res) =>{
     res.send('Hello info 2')
 })
-
-
-//Post Routes
 app.post('/education', async(req, res) => {
     try {
         const education = await education.create(req.body)
@@ -27,11 +22,6 @@ app.post('/education', async(req, res) => {
         res.status(500).json({message: error.message})
     }
 })
-
-// Modify Routtes
-
-// Delete Routes
-
 mongoose.connect('')
 .then(() =>{
     console.log('conected to mongoDB')

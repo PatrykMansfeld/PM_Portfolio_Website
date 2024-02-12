@@ -3,8 +3,8 @@
 .TopBar {
   display: flex;
   align-items: center;
-  justify-content: center;
-  flex-direction: row;
+  justify-content: flex-start;
+  flex-direction: column;
   border-bottom: 2px dashed $base-color;
 }
 
@@ -16,9 +16,9 @@
 
 .NavBarList {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  flex-direction: row;
+  flex-direction: column;
   text-decoration: none;
   font-size: 20px;
 }

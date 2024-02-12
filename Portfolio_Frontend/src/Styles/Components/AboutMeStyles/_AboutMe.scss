@@ -1,12 +1,24 @@
 .AboutMeBox {
+  height: 100vh;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
   border-bottom: 2px dashed black;
+  scroll-snap-align: start;
 }
 
-* {
-  background-color: grey;
+.NameBox {
+  border: 2px solid black;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
 }
-      
+
+.AboutMeParagraph {
+  border: 2px solid black;
+  padding: 20px;
+}

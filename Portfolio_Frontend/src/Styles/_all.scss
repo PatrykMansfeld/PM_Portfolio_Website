@@ -1,0 +1,8 @@
+@import "./Components/Main";
+@import "./Variables/Main";
+
+.general_layout {
+    display: flex;
+    flex-direction: row;
+    scroll-snap-type: y mandatory;
+}

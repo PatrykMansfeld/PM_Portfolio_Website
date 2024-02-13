@@ -25,7 +25,7 @@ function AboutMe() {
         </p>
       </div>
       <div className="AboutMeRight">
-        <img src="src\assets\ProfilePicture.png" alt="123" />
+        <img className="AboutMePicture" src="src\assets\ProfilePicture.png" alt="123" />
       </div>
     </div>
   );

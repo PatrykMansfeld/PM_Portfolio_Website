@@ -4,10 +4,10 @@ function Navigation() {
   return (
     <div className="TopBar">
       <div className="Logo">
-        <img className="LogoPicture" src="src\assets\Logo.png" alt="Logo" />
+        {/* <img className="LogoPicture" src="src\assets\Logo.png" alt="Logo" /> */}
       </div>
 
-      <div className="NavBar">
+      <div className="NavBarLine">
         <ul className="NavBarList">
           <li className="NavBarListElement">About Me</li>
           <li className="NavBarListElement">Education</li>

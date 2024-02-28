@@ -3,9 +3,9 @@
 .TopBar {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   flex-direction: column;
-  border-bottom: 2px dashed $base-color;
+  position: fixed;
 }
 
 .LogoPicture {
@@ -26,4 +26,13 @@
 .NavBarListElement {
   list-style-type: none;
   margin: 10px;
+}
+
+.NavBarLine {
+  width: 10px; /* Width of the vertical line */
+  background-color: #333; /* Color of the vertical line */
+}
+
+.NavBarLine li:last-child {
+  border-bottom: none;
 }

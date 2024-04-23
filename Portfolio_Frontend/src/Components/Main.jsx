@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import NavBar from "./TopNavBar/NavBar";
 import AboutMe from "./AboutMe/AboutMe";
 import Education from "./Education/Education";
@@ -8,18 +8,9 @@ import Skills from "./Skills/Skills";
 
 export default function Main() {
   return (
-<<<<<<< Updated upstream
-    <>
-      <NavBar />
-      <AboutMe />
-      <Education />
-      <Expirience />
-      <Projects />
-    </>
-=======
     <div className="general_layout">
       <div className="navigation_section">
-        <Navigation />
+        <NavBar />
       </div>
       <div className="content_section">
         <AboutMe />
@@ -29,6 +20,5 @@ export default function Main() {
         <Skills />
       </div>
     </div>
->>>>>>> Stashed changes
   );
 }

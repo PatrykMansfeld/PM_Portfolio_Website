@@ -5,25 +5,13 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-<<<<<<< Updated upstream
-    "devServer": "node server.js",
-    "devServ": "nodemon server.js"
-=======
     "serve": "node index.js",
     "dev": "nodemon index.js"
->>>>>>> Stashed changes
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-<<<<<<< Updated upstream
-    "express": "^4.18.2",
-    "mongoose": "^8.1.1"
-  },
-  "devDependencies": {
-    "nodemon": "^3.0.3"
-=======
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "express": "^4.18.3",
@@ -32,6 +20,5 @@
   },
   "devDependencies": {
     "nodemon": "^3.1.0"
->>>>>>> Stashed changes
   }
 }

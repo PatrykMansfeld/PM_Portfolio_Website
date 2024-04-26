@@ -1,17 +1,35 @@
 .Education {
-    border-bottom: 2px dashed white;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 2%;    
+  border-bottom: 2px dashed white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 2%;
+  background-color: lightgray;
 }
 
-.EducationBox {
+.Education_uep {
+  height: 700px;
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 2px solid #663399;
+  margin: 25px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.Education_cdv {
+    height: 700px;
+    width: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border: 2px solid rebeccapurple;
-    margin: 5px;
+    border: 2px solid #663399;
+    margin: 25px;
+    text-align: center;
+    font-size: 30px;
 }

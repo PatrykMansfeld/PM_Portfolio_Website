@@ -5,6 +5,7 @@ import Education from "./Education/Education";
 import Projects from "./Projects/Projects";
 import Expirience from "./WorkExpirience/Expirience";
 import Skills from "./Skills/Skills";
+import Timeline from "./Timeline/Timeline";
 
 export default function Main() {
   return (
@@ -18,6 +19,7 @@ export default function Main() {
         <Expirience />
         <Projects />
         <Skills />
+        <Timeline />
       </div>
     </div>
   );

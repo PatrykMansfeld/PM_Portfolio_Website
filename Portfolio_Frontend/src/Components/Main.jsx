@@ -2,8 +2,8 @@
 import NavBar from "./TopNavBar/NavBar";
 import AboutMe from "./AboutMe/AboutMe";
 import Education from "./Education/Education";
-import Projects from "./Projects/Projects";
-import Expirience from "./WorkExpirience/Expirience";
+// import Projects from "./Projects/Projects";
+// import Expirience from "./WorkExpirience/Expirience";
 import Skills from "./Skills/Skills";
 import Timeline from "./Timeline/Timeline";
 
@@ -16,8 +16,8 @@ export default function Main() {
       <div className="content_section">
         <AboutMe />
         <Education />
-        <Expirience />
-        <Projects />
+        {/* <Expirience />
+        <Projects /> */}
         <Skills />
         <Timeline />
       </div>

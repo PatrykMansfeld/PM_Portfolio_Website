@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-function SkillsComponent() {
+function EducationFetch() {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -8,7 +8,7 @@ function SkillsComponent() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("http://localhost:3000/api/skills");
+        const response = await fetch("http://localhost:3000/api/education/");
         if (!response.ok) {
           throw new Error("Network response was not ok");
         }
@@ -30,12 +30,13 @@ function SkillsComponent() {
 
   return (
     <div>
-      <h1>Skills</h1>
       <div className="Skills_Paragraph">
-        {data.map((skill, index) => (
-          <p className="Skills" key={index}>
-            #{skill.skillName}
-            {/* #{skill.expiriecneLevel} */}
+        {data.map((edu, index) => (
+          <p className="education" key={index}>
+            {edu.FieldOfStudy}
+            {edu.Specialization}
+            {edu.StartingDate}
+            {edu.EndingDate}
           </p>
         ))}
       </div> 
@@ -43,4 +44,4 @@ function SkillsComponent() {
   );
 }
 
-export default SkillsComponent;
+export default EducationFetch;

@@ -9,6 +9,21 @@ const getEducation = async (req, res) => {
   }
 };
 
+const getEducationById = async (req, res) => {
+  try {
+    const { id } = req.params;
+    const edu = await Education.findById(id);
+
+    if (!edu) {
+      return res.status(404).json({ message: "Education not found" });
+    }
+
+    res.status(200).json(edu);
+  } catch (error) {
+    res.status(500).json({ message: error.message });
+  }
+};
+
 const createEducation = async (req, res) => {
   try {
     const Edu = await Education.create(req.body);
@@ -52,4 +67,4 @@ const updateEducation = async (req, res) => {
     }
   };
 
-module.exports = { getEducation, createEducation, updateEducation, deleteEducation };
+module.exports = { getEducation, createEducation, updateEducation, deleteEducation, getEducationById };

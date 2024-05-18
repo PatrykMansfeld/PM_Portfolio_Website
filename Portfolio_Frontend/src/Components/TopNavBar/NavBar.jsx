@@ -1,4 +1,5 @@
 // import React from "react";
+import { Link } from "react-router-dom";
 import Logo from "../../assets/Logo.png";
 
 function NavBar() {
@@ -10,12 +11,10 @@ function NavBar() {
 
       <div className="NavBar">
         <ul className="NavBarList">
-          <li className="NavBarListElement">About Me</li>
-          <li className="NavBarListElement">Education</li>
-          <li className="NavBarListElement">Work Expirence</li>
-          <li className="NavBarListElement">My Projects</li>
-          <li className="NavBarListElement">Links</li>
-          <li className="NavBarListElement">Contact</li>
+          <li className="NavBarListElement"><Link to="/aboutme">About Me</Link></li>
+          <li className="NavBarListElement"><Link to="/education">Education</Link></li>
+          <li className="NavBarListElement"><Link to="/skills">Skills</Link></li>
+          <li className="NavBarListElement"><Link to="/timeline">Timeline</Link></li>
         </ul>
       </div>
     </div>

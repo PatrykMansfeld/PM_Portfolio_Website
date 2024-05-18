@@ -1,10 +1,11 @@
 // import React from "react";
+import Logo from "../../assets/Logo.png";
 
 function NavBar() {
   return (
     <div className="TopBar">
       <div className="Logo">
-        <img className="LogoPicture" src="src\assets\Logo.png" alt="Logo" />
+        <img className="LogoPicture" src={Logo} alt="Logo" />
       </div>
 
       <div className="NavBar">

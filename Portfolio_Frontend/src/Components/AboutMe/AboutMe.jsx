@@ -1,4 +1,5 @@
 import React from "react";
+import ProfilePicture from "../../assets/ProfilePicture.png";
 
 function AboutMe() {
   return (
@@ -17,7 +18,7 @@ function AboutMe() {
         </p>
       </div>
       <div className="AboutMeRight">
-        <img src="src\assets\ProfilePicture.png" alt="123" />
+        <img src={ProfilePicture} alt="ProfilePicture" />
       </div>
     </div>
   );

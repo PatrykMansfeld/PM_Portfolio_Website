@@ -1,0 +1,23 @@
+.general_layout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.navigation_section {
+  position: relative;
+  border: 2px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 500px;
+}
+.content_section {
+  border: 2px solid white;
+  min-height: 1000px;
+  
+}
+.contact_section {
+  border: 2px solid white;
+}

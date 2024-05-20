@@ -5,6 +5,7 @@ import AboutMe from "./AboutMe/AboutMe";
 import Education from "./Education/Education";
 import Skills from "./Skills/Skills";
 import Timeline from "./Timeline/Timeline";
+import Contact from "./Contact/Contact";
 
 export default function Main() {
   return (
@@ -22,8 +23,8 @@ export default function Main() {
             <Route path="/" element={<AboutMe />} /> {/* This will be the default route */}
           </Routes>
         </div>
-        <div>
-          
+        <div className="contact_section">
+          <Contact />
         </div>
       </div>
     </Router>

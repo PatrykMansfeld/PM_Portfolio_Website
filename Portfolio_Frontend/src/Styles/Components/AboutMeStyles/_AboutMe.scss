@@ -1,8 +1,17 @@
-@import '../../Variables/_Colors.scss';
-
-.AboutMeBox {
+.profile_img{
+  border: 3px solid white;
+  width: 250px;
+  height: 250px;
   display: flex;
-  flex-direction: column;
-  border-bottom: 2px dashed black;
-  background-color: $backgroud-color-primary;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
 }
+
+.about_me_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+

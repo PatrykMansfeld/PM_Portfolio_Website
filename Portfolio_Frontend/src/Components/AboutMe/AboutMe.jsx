@@ -3,7 +3,10 @@ import ProfilePicture from "../../assets/ProfilePicture.png";
 
 function AboutMe() {
   return (
-    <div className="AboutMeBox">
+    <div className="about_me_box">
+      <div className="AboutMeRight">
+        <img  className="profile_img" src={ProfilePicture} alt="ProfilePicture" />
+      </div>
       <div className="AboutMeLeft">
         <h1 className="AboutMeName">Patryk Mansfeld</h1>
         <h1 className="AboutMeTitle">Junior Software Developer</h1>
@@ -16,9 +19,6 @@ function AboutMe() {
           <br />
           Hic unde aperiam, ipsam error perspiciatis placeat eligendi.
         </p>
-      </div>
-      <div className="AboutMeRight">
-        <img src={ProfilePicture} alt="ProfilePicture" />
       </div>
     </div>
   );

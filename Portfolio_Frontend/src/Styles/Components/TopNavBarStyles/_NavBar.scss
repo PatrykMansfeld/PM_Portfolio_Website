@@ -4,21 +4,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
-  // border-bottom: 2px dashed $base-color;
+  flex-direction: row;
+  border: 2px dashed white
 }
-
-.LogoPicture {
-  width: 75x;
-  height: 75px;
-  border-radius: 100%;
-}
-
 .NavBarList {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  flex-direction: row;
   text-decoration: none;
   font-size: 20px;
 }

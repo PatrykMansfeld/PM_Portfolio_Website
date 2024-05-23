@@ -16,6 +16,9 @@ export default function Main() {
           <AboutMe />
         </div>
         <div>
+          <div>
+            <NavBar />
+          </div>
           <div className="content_section">
             <Routes>
               {/* <Route path="/aboutme" element={<AboutMe />} /> */}
@@ -24,9 +27,6 @@ export default function Main() {
               <Route path="/timeline" element={<Timeline />} />
               <Route path="/" element={<AboutMe />} />
             </Routes>
-          </div>
-          <div>
-
           </div>
         </div>
         <div className="contact_section">

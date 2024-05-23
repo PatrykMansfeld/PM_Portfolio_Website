@@ -14,15 +14,17 @@
   align-items: center;
   justify-content: center;
   border: 2px solid white;
-  width: 300px;
+  width: 25vw;
   height: 65vh;
   margin-left: 100px;
 }
 
 .content_section {
+  display: flex;
+  flex-direction: column-reverse;
   border: 2px solid white;
   height: 50vh;
-  width: 1000px;
+  width: 50vw;
   overflow: auto;
 }
 .contact_section {

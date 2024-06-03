@@ -12,25 +12,17 @@ export default function Main() {
     <Router>
       <div className="general_layout">
         <div className="navigation_section">
-          {/* <NavBar /> */}
-          <AboutMe />
+          <NavBar />
         </div>
-        <div>
-          <div>
-            <NavBar />
-          </div>
-          <div className="content_section">
-            <Routes>
-              {/* <Route path="/aboutme" element={<AboutMe />} /> */}
-              <Route path="/education" element={<Education />} />
-              <Route path="/skills" element={<Skills />} />
-              <Route path="/timeline" element={<Timeline />} />
-              <Route path="/" element={<AboutMe />} />
-            </Routes>
-          </div>
-        </div>
-        <div className="contact_section">
-          <Contact />
+        <div className="content_section">
+          <Routes>
+            <Route path="/aboutme" element={<AboutMe />} />
+            <Route path="/education" element={<Education />} />
+            <Route path="/skills" element={<Skills />} />
+            <Route path="/timeline" element={<Timeline />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/" element={<AboutMe />} />
+          </Routes>
         </div>
       </div>
     </Router>

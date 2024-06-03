@@ -1,23 +1,36 @@
-// import React from "react";
+import React, { useEffect, useState } from "react";
 
-function Education() {
+const Education = () => {
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch("http://localhost:3000/api/education/");
+        const jsonData = await response.json();
+        setData(jsonData);
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
+    };
+
+    fetchData();
+  }, []);
+
   return (
-    <div className="Education">
-      <div className="Education_uep">
-        <h1 className="edu_title">Poznan Economics <br/> University</h1>
-        <p className="edu_topic">Field of study <br/> Computer science</p>
-        <p className="edu_specialization">Specialization <br/> Data Analysis</p>
-        <p className="edu_date">10.2018 - 03.2020</p>
-      </div>
-
-      <div className="Education_cdv">
-        <h1 className="edu_title">Collegium Da Vinci</h1>
-        <p className="edu_topic">Field of study <br/> Computer science and Economics</p>
-        <p className="edu_specialization">Specialization <br/> Web Applications</p>
-        <p className="edu_date">2020 - 2023</p>
-      </div>
+    <div>
+      <h2>Education</h2>
+      {data.map((item) => (
+        <div key={item.id}>
+          <p>{item.UniversityName}</p>
+          <p>{item.FieldOfStudy}</p>
+          <p>{item.Specialization}</p>
+          <p>{item.StartingDate}</p>
+          <p>{item.EndingDate}</p>
+        </div>
+      ))}
     </div>
   );
-}
+};
 
 export default Education;

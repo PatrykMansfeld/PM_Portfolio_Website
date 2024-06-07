@@ -1,37 +1,12 @@
-.profile_img{
-  border: 3px solid white;
-  width: 250px;
-  height: 250px;
+.about-me-container {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
+  flex-direction: row;
 }
 
-.about_me_box {
+.center-box {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-}
-
-.AboutMeName {
-  font-size: 3rem;
-  color: white;
-  text-align: center;
-  margin: 20px;
-}
-
-.AboutMeTitle {
-  font-size: 2rem;
-  color: white;
-  text-align: center;
-  margin: 20px;
-}
-
-.AboutMeParagraph {
-  font-size: 1rem;
-  color: white;
-  text-align: center;
-  margin: 10px;
+  width: 100%;
 }

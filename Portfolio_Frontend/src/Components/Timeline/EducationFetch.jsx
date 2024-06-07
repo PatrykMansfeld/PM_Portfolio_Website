@@ -39,7 +39,7 @@ function EducationFetch() {
             {edu.EndingDate}
           </p>
         ))}
-      </div> 
+      </div>
     </div>
   );
 }

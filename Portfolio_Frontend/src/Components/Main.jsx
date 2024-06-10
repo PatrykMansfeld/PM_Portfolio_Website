@@ -10,7 +10,7 @@ import Contact from "./Contact/Contact";
 export default function Main() {
   return (
     <Router>
-      <div className="general-layout">
+      <div className="GeneralLayout">
         <div className="navigation_section">
           <NavBar />
         </div>

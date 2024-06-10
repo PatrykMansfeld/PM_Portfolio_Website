@@ -1,12 +1,15 @@
-.about-me-container {
+.AboutMeBox {
   display: flex;
-  flex-direction: row;
-}
-
-.center-box {
-  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.AboutMeText {
+  display: flex;
   flex-direction: column;
-  width: 100%;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin: 0 20px;
 }

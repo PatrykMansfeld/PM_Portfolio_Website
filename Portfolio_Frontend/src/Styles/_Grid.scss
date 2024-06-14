@@ -1,4 +1,8 @@
-.GeneralLayout {
-    display: flex;
-    flex-direction: row;
+.LP-Container {
+  display: grid;
+  display: grid;
+  grid-template-columns: 0.5fr repeat(4, 1fr) 0.5fr;
+  grid-template-rows: 0.5fr repeat(4, 1fr) 0.5fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
 }

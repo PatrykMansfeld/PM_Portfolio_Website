@@ -3,7 +3,26 @@
 @import "./_Grid.scss";
 
 body {
-    background-image: url("../assets/bi1.webp");
-    height: 100vh;
-    font-size: 1.5em;
+  // background-image: url("../assets/bi1.webp");
+  height: 100vh;
+//   font-size: 1.5em;
+  background: hsla(186, 33%, 94%, 1);
+
+  background: linear-gradient(
+    90deg,
+    hsla(186, 33%, 94%, 1) 0%,
+    hsla(216, 41%, 79%, 1) 100%
+  );
+
+  background: -moz-linear-gradient(
+    90deg,
+    hsla(186, 33%, 94%, 1) 0%,
+    hsla(216, 41%, 79%, 1) 100%
+  );
+
+  background: -webkit-linear-gradient(
+    90deg,
+    hsla(186, 33%, 94%, 1) 0%,
+    hsla(216, 41%, 79%, 1) 100%
+  );
 }

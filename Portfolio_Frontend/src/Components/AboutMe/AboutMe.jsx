@@ -4,7 +4,7 @@ import ProfilePicture from "../../assets/ProfilePicture.png";
 
 function AboutMe() {
   return (
-    <div className="AboutMeBox">
+    <div className="About-Me-Box">
       <div className="ImgBox">
         <img
           className="profile_img"
@@ -12,6 +12,7 @@ function AboutMe() {
           alt="ProfilePicture"
         />
       </div>
+
       <div className="AboutMeText">
         <h1 className="AboutMeName">Patryk Mansfeld</h1>
         <h1 className="AboutMeTitle">Junior Software Developer</h1>

@@ -1,11 +1,8 @@
 @import "./Components/Main";
 @import "./Variables/Main";
-@import "./_Grid.scss";
+// @import "./_Grid.scss";
 
 body {
-  // background-image: url("../assets/bi1.webp");
-  height: 100vh;
-//   font-size: 1.5em;
   background: hsla(186, 33%, 94%, 1);
 
   background: linear-gradient(
@@ -25,10 +22,4 @@ body {
     hsla(186, 33%, 94%, 1) 0%,
     hsla(216, 41%, 79%, 1) 100%
   );
-}
-.GeneralLayout {
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
-  // flex-direction: row;
 }

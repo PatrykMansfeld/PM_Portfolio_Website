@@ -6,25 +6,19 @@ import Education from "./Education/Education";
 import Skills from "./Skills/Skills";
 import Timeline from "./Timeline/Timeline";
 import Contact from "./Contact/Contact";
+import LandingPage from "./LandingPage/LandingPage";
 
 export default function Main() {
   return (
     <Router>
-      <div className="GeneralLayout">
-        <div className="navigation_section">
-          <NavBar />
-        </div>
-        <div className="content_section">
-          <Routes>
-            <Route path="/aboutme" element={<AboutMe />} />
-            <Route path="/education" element={<Education />} />
-            <Route path="/skills" element={<Skills />} />
-            <Route path="/timeline" element={<Timeline />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/" element={<AboutMe />} />
-          </Routes>
-        </div>
-      </div>
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        {/* <Route path="/aboutme" element={<AboutMe />} />
+      <Route path="/education" element={<Education />} />
+      <Route path="/skills" element={<Skills />} />
+      <Route path="/timeline" element={<Timeline />} />
+      <Route path="/contact" element={<Contact />} /> */}
+      </Routes>
     </Router>
   );
 }

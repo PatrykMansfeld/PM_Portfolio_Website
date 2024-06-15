@@ -12,12 +12,13 @@ export default function Main() {
   return (
     <Router>
       <Routes>
+        {/* <Route path="/" element={<NavBar />} /> */}
         <Route path="/" element={<LandingPage />} />
-        {/* <Route path="/aboutme" element={<AboutMe />} />
-      <Route path="/education" element={<Education />} />
-      <Route path="/skills" element={<Skills />} />
-      <Route path="/timeline" element={<Timeline />} />
-      <Route path="/contact" element={<Contact />} /> */}
+        <Route path="/aboutme" element={<AboutMe />} />
+        <Route path="/education" element={<Education />} />
+        <Route path="/skills" element={<Skills />} />
+        <Route path="/timeline" element={<Timeline />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </Router>
   );

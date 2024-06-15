@@ -1,0 +1,28 @@
+.LP-Container {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 0.5fr repeat(4, 1fr) 0.5fr;
+  grid-template-rows: 0.5fr repeat(4, 1fr) 0.5fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+
+.Initials {
+  grid-area: 2 / 2 / 4 / 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 3em;
+  border: 2px solid black;
+}
+
+.LP-AboutMe {
+  grid-area: 2 / 3 / 3 / 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3em;
+  border: 2px solid black;
+}

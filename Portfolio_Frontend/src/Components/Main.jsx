@@ -1,6 +1,5 @@
 // import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import NavBar from "./TopNavBar/NavBar";
 import AboutMe from "./AboutMe/AboutMe";
 import Education from "./Education/Education";
 import Skills from "./Skills/Skills";
@@ -12,7 +11,6 @@ export default function Main() {
   return (
     <Router>
       <Routes>
-        {/* <Route path="/" element={<NavBar />} /> */}
         <Route path="/" element={<LandingPage />} />
         <Route path="/aboutme" element={<AboutMe />} />
         <Route path="/education" element={<Education />} />

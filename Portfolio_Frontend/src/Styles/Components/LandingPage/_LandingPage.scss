@@ -1,48 +1,53 @@
-.LP-Container {
+.LandingPageBox {
   height: 100vh;
   width: 100vw;
   display: grid;
-  grid-template-columns: 0.5fr repeat(4, 1fr) 0.5fr;
-  grid-template-rows: 0.5fr repeat(4, 1fr) 0.5fr;
-  grid-column-gap: 20px;
-  grid-row-gap: 20px;
-  background-color: #686d76;
+  grid-template-columns: 0.5fr repeat(5, 1fr) 0.5fr;
+  grid-template-rows: 0.5fr repeat(5, 1fr) 0.5fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  background-color: #9DACB2;
 }
 
-.Initials {
-  grid-area: 2 / 2 / 4 / 3;
+.LandigPageInitials {
+  grid-area: 1/ 2/ 2/ 4;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-size: 3em;
-  border: 2px solid black;
-  border-radius: 20px;
-  background-color: #36c2ce;
+  font-size: 20px;
 }
 
-.LP-AboutMe {
-  grid-area: 2 / 3 / 3 / 5;
+.LandingPageNavigation {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 3em;
-  border: 2px solid black;
-  border-radius: 20px;
-  background-color: #36c2ce;
-}
-.aboutme-link {
-  text-decoration: none;
-  color: black;
+  grid-area: 1/ 5/ 2/ 7;
 }
 
-.LP-Projects {
-  grid-area: 3 / 3 / 4 / 5;
+.Name {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 3em;
-  border: 2px solid black;
-  border-radius: 20px;
-  background-color: #36c2ce;
+  padding: 10px;
+  font-family: 'Mate', serif;
+}
+
+.Profesion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #9DACB2; // Background color of the container
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  background-color: #ff6347; // Different color for the circle
+  border-radius: 50%;
 }

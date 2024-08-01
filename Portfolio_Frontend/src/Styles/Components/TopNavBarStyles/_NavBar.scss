@@ -1,29 +1,12 @@
-.NavBar {
-  top: 0;
-  left: 0;
-  width: 200px;
-  height: 100vh;
+.NavBarList {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
   align-items: center;
-  // border-right: 1px solid black;
-}
-
-.NavBar-list {
-  list-style-type: none;
-  padding: 10px;
+  justify-content: center;
+  margin: auto;
 }
 
 .NavBarListElement {
-  margin: 20px 0;
-  font-size: 1.5em;
-  :hover {
-    background-color: lightgray;
-  }
-}
-
-.NavBarListElement a {
-  text-decoration: none;
-  color: black;
+  list-style-type: none;
+  margin: 0 5px;
 }

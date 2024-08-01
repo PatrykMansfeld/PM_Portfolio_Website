@@ -1,26 +1,19 @@
-import { Link } from "react-router-dom";
+import Navbar from '../Navigation/NavBar.jsx'
 
-const LandingPage = () => {
+function LandingPage() {
   return (
-    <div className="LP-Container">
-      <div className="Initials">
-        <h1>
-          Patryk <br /> Mansfeld
-        </h1>
-        <h1>Fullstack Developer</h1>
+    <div className='LandingPageBox'>
+      <div className='LandigPageInitials'>
+        <h1 className='Name'>Patryk Mansfeld - Fullstack Developer パトリック</h1>
       </div>
-      <div className="LP-AboutMe">
-        <Link to="/aboutme" className="aboutme-link">
-          <h1>About Me</h1>
-        </Link>
+      <div className='LandingPageNavigation'>
+        <Navbar />
       </div>
-      <div className="LP-Projects">
-        <Link to="/projects" className="projects-link">
-          <h1>Projects</h1>
-        </Link>
-      </div>
+      {/* <div className="container">
+      <div className="circle"></div>
+    </div> */}
     </div>
-  );
-};
+  )
+}
 
-export default LandingPage;
+export default LandingPage
